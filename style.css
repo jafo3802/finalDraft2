@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Cinzel&displ");
+body {
+  background: gray;
+  font-family: "Interstate Condensed", sans-serif; }
+
+header {
+  background: lightgray;
+  border: solid 1px black;
+  -webkit-order-radius: 15px;
+  border-radius: 15px; }
+  header h1 {
+    font-family: "Interstate Condensed", serif;
+    text-align: center; }
+
+nav {
+  background: lightgray;
+  border: solid 1px black;
+  -webkit-order-radius: 15px;
+  border-radius: 15px;
+  text-align: center; }
+  nav ul {
+    margin-left: -40px; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px; }
+      nav ul li a {
+        text-decoration: none;
+        padding: 10px; }
+      nav ul li a:link, nav ul li a:visited {
+        color: black; }
+      nav ul li a:hover, nav ul li a:active {
+        color: white;
+        background: black; }
+
+main {
+  background: lightgray;
+  border: solid 1px black;
+  -webkit-order-radius: 15px;
+  border-radius: 15px;
+  text-align: center; }
+  main ul {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
+    grid-gap: 10px;
+    padding: 10px; }
+    main ul li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px; }
+      main ul li a {
+        text-decoration: none;
+        padding: 10px; }
+      main ul li a:link, main ul li a:visited {
+        color: black; }
+      main ul li a:hover, main ul li a:active {
+        color: white;
+        background: black; }
+
+footer{
+    background: lightgray;
+    border: solid 1px black;
+    -webkit-order-radius: 15px;
+    border-radius: 15px;
+    text-align: center; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+    padding: 10px; }
+
+section{
+    height: 50vh;
+    grid-template-columns: auto auto;
+    text-align: center;
+    grid-gap: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #007795;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.project {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 5%; }
+
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px;
+  /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px; }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px; }
+
+@media only screen and (max-width: 650px) {
+  body {
+    background: orange; } }
+
+body {
+  background: gray; }
+
+  a:focus
+{
+  /* whatever styles you feel like */
+  outline: 5px solid yellow;
+}
+
+
+  /* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+
+    background: lightgray;
+    border: solid 1px black;
+    -webkit-order-radius: 15px;
+    border-radius: 15px;
+    text-align: center; 
+
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px; 
+}
+  
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #007795;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #007795;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+/* form styling */
+
+label {
+	margin-right: 0.3em;
+	width: 6.0em;
+	display: inline-block;
+}
+
+
+#formcol1 input.reqfield {
+	background: #FF9;
+}
+
+#formcol1 label{
+	text-align: right;
+}
+
+#formcol1 li {
+list-style:none;
+}
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: #BB3D2F !important;}
+
+legend{
+	background-color: #007795;
+	padding: 0.5rem;
+	font-size: 1.1rem;
+	color: white;
+}
+
+fieldset{
+	background-color: #EFEFEF;
+}
+
+input[type=submit]{
+	background-color: #007795;
+	color: white;
+	}
+
+
+
+
